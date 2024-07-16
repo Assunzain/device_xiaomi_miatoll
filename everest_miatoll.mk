@@ -9,17 +9,28 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
+
 
 # Inherit from miatoll device
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_GAPPS_ARCH := arm64
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
+# everest flags
+EVEREST_MAINTAINER := AssunZain
 
-PRODUCT_NAME := lineage_miatoll
+# Blur
+TARGET_SUPPORTS_BLUR := true
+
+# Gapps
+WITH_GAPPS := false
+
+# Vanilla
+# WITH_GAPPS := false
+
+
+
+PRODUCT_NAME := everest_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

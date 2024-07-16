@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_miatoll-user \
-    lineage_miatoll-userdebug \
-    lineage_miatoll-eng
+    everest_miatoll-ap2a-eng \
+    everest_miatoll-ap2a-userdebug \
+    everest_miatoll-ap2a-user
